@@ -1,0 +1,74 @@
+
+body{
+    background-color:#38dcd12e;
+    font-family: 'Nunito Sans',sans-serif;
+}
+.main-container {
+
+     margin: 0 auto 0 auto; 
+    width: 90%;
+    /* text-align: center; */
+    font-size: 16px;
+    padding: 7px 20px 20px 20px;
+}
+
+h1{
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+}
+
+td {
+    border: solid 1px;
+    padding: 2px;
+}
+
+th {
+    border: black solid 1px;
+    background: #ff0000db;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+input[type="search"] {
+    margin-right: 42%;
+    margin-left: 42%;
+    margin-bottom: 10px;
+}
+label{
+    text-align: center;
+    font-size: 20px;
+}
+
+#buttons{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+button {
+    background: red;
+    color: white;
+    border-radius: 16px;
+    padding: 10px;
+    border: white solid 1px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: white;
+    color: red;
+    border-radius: 16px;
+    border: red solid 1px;
+}
+
+

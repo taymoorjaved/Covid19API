@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona Cases</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="heading">
+            <h1><b>CORONA CASES WORLDWIDE</b></h1>
+        </div>
+        <div id="todo-list" class="todo-list">
+            <label> SEARCH</label>
+            <input type="search" id="search" placeholder="Search By Country Name">
+            <div id="buttons">
+            <button onclick="sortbyTotalConfirmed()">Short by TotalConfirmed</button>
+            <button onclick="sortbyTotalDeaths()">Short by TotalDeaths</button>
+            <button onclick="sortbyTotalRecovered()">Short by TotalRecovered</button>
+            </div>
+            <table id="tables">
+                <thead>
+                    <tr id="table-header">
+                        
+                    </tr>
+                </thead>
+                <tbody id="my-table">
+                    <!-- Add Rows Dynamically Here... -->
+                </tbody>
+            </table>
+
+            <table>
+            </table>
+            
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
