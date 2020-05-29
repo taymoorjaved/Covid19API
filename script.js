@@ -13,15 +13,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
                     if (mynew[v] !== "CountryCode" && mynew[v] !== "Slug" && mynew[v] !== "NewConfirmed" && mynew[v] !== "NewDeaths" && mynew[v] !== "NewRecovered") {
                         let tableHeader = document.getElementById('table-header');
-                        // let headercolumn = document.createElement("tr");
                         let headerrow = document.createElement('th');
                         headerrow.onclick = function (e){
                           debugger;                          
                         }
                         headerrow.innerHTML = mynew[v];
-                        // headercolumn.appendChild(headerrow);
                         tableHeader.appendChild(headerrow);
-                        console.log(mynew[v]);
                     }
                 }
 
@@ -56,7 +53,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
             let currentTr = trArr[i];
             let firstTd = currentTr.querySelectorAll('td')[0];
 
-            // if (firstTd.innerHTML.indexOf(searchVal) !== -1) {
             if (firstTd.innerHTML.toLowerCase().indexOf(searchVal.toLowerCase()) !== -1) {
                 currentTr.style.display = ''
             } else {
